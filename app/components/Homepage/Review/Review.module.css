@@ -1,0 +1,236 @@
+.review_container {
+	max-width: 980px;
+}
+
+.review_review {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 -15px;
+	width: auto;
+}
+
+.review_items {
+	width: 100%;
+	min-width: 100%;
+	padding: 0 15px;
+	display: none;
+	height: auto;
+}
+
+.review_items:nth-child(1) {
+	display: block;
+}
+
+.section_title {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 25px;
+	font-family: "Poppins Bold", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1.2;
+	font-size: 28px;
+	text-transform: capitalize;
+	color: #0A0A0A;
+}
+
+@media (min-width: 768px) {
+	.review_items {
+		width: 50%;
+		min-width: 50%;
+	}
+
+	.review-section .swiper-container:not(.swiper-container-initialized) .review_items:nth-child(-n+2) {
+		display: block;
+	}
+}
+
+.review-section .swiper-container:not(.swiper-container-initialized) .btn_swiper {
+	display: none;
+}
+
+.swiper-container-initialized {
+	position: static;
+	margin: 0 -10px;
+	padding-top: 40px;
+}
+
+@media (min-width: 992px) {
+	.review-section .swiper-container.swiper-container-initialized {
+		margin: 0 -15px;
+		padding-top: 0;
+	}
+}
+
+.swiper_slide {
+	height: auto;
+}
+
+.review_item_wrapper {
+	padding: 15px 10px 0;
+}
+
+@media (min-width: 992px) {
+	.review_item_wrapper {
+		padding: 15px 15px 0;
+	}
+}
+
+.btn_swiper {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 60px;
+	background-color: #0ad8ce;
+	border: 1px solid #0ad8ce;
+	z-index: 5;
+	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+	.btn_swiper {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+@media (min-width: 992px) {
+	.btn_swiper {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+.review-section .btn-swiper.swiper-btn-next {
+	right: calc(50% - 50px);
+}
+
+@media (min-width: 768px) {
+	.review-section .btn-swiper.swiper-btn-next {
+		right: 0;
+	}
+}
+
+@media (min-width: 1300px) {
+	.review-section .btn-swiper.swiper-btn-next {
+		right: -40px;
+	}
+}
+
+.review-section .btn-swiper.swiper-btn-prev {
+	left: calc(50% - 50px);
+}
+
+@media (min-width: 768px) {
+	.review-section .btn-swiper.swiper-btn-prev {
+		left: 0;
+	}
+}
+
+@media (min-width: 1300px) {
+	.review-section .btn-swiper.swiper-btn-prev {
+		left: -40px;
+	}
+}
+
+.review-section .btn-swiper.swiper-btn-prev svg {
+	transform: rotate(180deg);
+}
+
+.btn_swiper svg {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+@media (min-width: 992px) {
+	.btn_swiper:hover {
+		background-color: transparent;
+	}
+
+	.btn_swiper:hover svg path {
+		stroke: #000000;
+	}
+}
+
+.review_item_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height: 100%;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.description {
+	margin-bottom: 25px;
+	padding: 30px 20px 30px;
+	background-color: #fff;
+	border: 1px solid #0ad8ce;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	position: relative;
+	flex-grow: 1;
+}
+
+@media (min-width: 992px) {
+	.description {
+		padding: 30px 45px 30px;
+	}
+}
+
+.description:before,
+.description:after {
+	content: "";
+	position: absolute;
+	left: 36px;
+	border: 13px solid transparent;
+	border-top: 13px solid #fff;
+}
+
+.description:after {
+	top: calc(100% - 1px);
+}
+
+.description:before {
+	top: 100%;
+	border-top-color: #0ad8ce;
+}
+
+.author_block {
+	padding: 0 24px;
+}

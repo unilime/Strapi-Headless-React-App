@@ -1,0 +1,278 @@
+.post_section {
+	padding: 25px 0 30px;
+}
+
+@media (min-width: 768px) {
+	.post_section {
+		padding: 25px 0 30px;
+	}
+}
+
+.author {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+	.author {
+		margin-bottom: 30px;
+	}
+}
+
+.author .img {
+	width: 50px;
+	min-width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+	.author .img {
+		margin-right: 15px;
+	}
+}
+
+.author .img img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.author_block_content {
+	font-family: "Poppins Bold", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 1.2;
+	margin-bottom: 3px;
+}
+
+@media (min-width: 768px) {
+	.author_block_content {
+		margin-bottom: 5px;
+	}
+}
+
+.author_block_publish_time {
+	font-size: 14px;
+	line-height: 1.2;
+	letter-spacing: 0.1px;
+	color: #999999;
+}
+
+.content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.main_content {
+	flex-grow: 1;
+}
+
+@media (min-width: 992px) {
+	.main_content {
+		padding-right: 34px;
+	}
+}
+
+.main_content .toc {
+	display: block;
+}
+
+@media (min-width: 992px) {
+	.main_content .toc {
+		display: none;
+	}
+}
+
+.main_content .toc li {
+	padding: 0;
+}
+
+.main_content .toc li:after {
+	display: none;
+}
+
+.post_section h1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	position: relative;
+	font-family: "Poppins Bold", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 33px;
+	line-height: 1.32;
+	color: #0A0A0A;
+	z-index: 1;
+}
+
+@media (min-width: 992px) {
+	.post_section h1 {
+		font-size: 35px;
+	}
+}
+
+@media (min-width: 992px) {
+	.post_section h1 {
+		font-size: 45px;
+	}
+}
+
+.post_section p {
+	text-align: justify;
+}
+
+.post_section p img {
+	width: 100%;
+}
+
+.sidebar {
+	width: 300px;
+	min-width: 340px;
+	display: none;
+}
+
+@media (min-width: 992px) {
+	.sidebar {
+		display: block;
+	}
+}
+
+.sidebar .sticky-sidebar {
+	position: sticky;
+	top: 120px;
+}
+
+.box-content p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	color: #0A0A0A;
+}
+
+@media (min-width: 992px) {
+	.box-content p {
+		font-size: 18px;
+	}
+}
+
+.box_content p:last-child {
+	margin-bottom: 0;
+}
+
+.box_content ul {
+	padding: 0 0 0 20px;
+	margin: 0 0 15px;
+}
+
+.box_content li {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.box_content li:before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: -20px;
+	width: 8px;
+	height: 8px;
+	border-radius: 2px;
+	background: #0ad8ce;
+}
+
+.box_content li:last-child {
+	margin-bottom: 0;
+}
+
+.box_content blockquote {
+	margin: 0;
+	font-style: italic;
+}
+
+.box_content a {
+	color: #0ad8ce;
+}
+
+@media (min-width: 992px) {
+	.box_content a:hover {
+		color: #0ab5d3;
+	}
+}
+
+.toc {
+	background: #FFFFFF;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 3px 6px rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+	padding: 20px 20px;
+	margin-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+	.toc {
+		margin-bottom: 24px;
+	}
+}
+
+@media (min-width: 768px) {
+	.toc {
+		padding: 25px 20px;
+	}
+}
+
+.toc .toc_header {
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	font-family: "Poppins Bold", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	margin-bottom: 15px;
+}
+
+.toc .toc_body ul {
+	padding: 0 0 0 20px;
+	margin: 0;
+}
+
+.toc .toc_body li {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.toc .toc_body li:before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: -20px;
+	width: 8px;
+	height: 8px;
+	border-radius: 2px;
+	background: #0ad8ce;
+}
+
+.toc .toc_body li:last-child {
+	margin-bottom: 0;
+}
+
+.toc .toc_body a {
+	font-size: 14px;
+	line-height: 1.5;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	color: #666666;
+	display: inline-block;
+}
+
+@media (min-width: 992px) {
+	.toc .toc_body a:hover {
+		color: #0ab5d3;
+	}
+}

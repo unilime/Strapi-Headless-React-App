@@ -1,0 +1,145 @@
+.service_section {
+	margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+	.service_section {
+		margin-bottom: 60px;
+	}
+}
+
+.service_section .service_grid_list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+
+.service_section .service_grid_list .service_items {
+	width: 100%;
+	min-width: 100%;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+	.service_section .service_grid_list .service_items {
+		width: 50%;
+		min-width: 50%;
+	}
+}
+
+.service_section .service_grid_list .item_wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	height: 100%;
+	padding: 30px 20px;
+	box-shadow: 0 8px 28px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	position: relative;
+}
+
+@media (min-width: 992px) {
+	.service_section .service_grid_list .item_wrapper {
+		padding: 35px 35px;
+	}
+
+	.service_section .service_grid_list .item_wrapper:hover {
+		color: #0A0A0A;
+	}
+}
+
+@media (min-width: 1200px) {
+	.service_section .service_grid_list .item_wrapper {
+		padding: 35px 50px;
+	}
+}
+
+.service_section .service_grid_list .info_description {
+	flex-grow: 1;
+	font-size: 1rem;
+}
+
+.service_section .service_grid_list .info_top {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.service_section .service_grid_list .info_top .image {
+	width: 70px;
+	min-width: 70px;
+	height: 70px;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+@media (min-width: 1200px) {
+	.service_section .service_grid_list .info_top .image {
+		width: 75px;
+		min-width: 75px;
+		height: 75px;
+		margin-right: 20px;
+	}
+}
+
+.service_section .service_grid_list .info_top .image img {
+	width: 100%;
+	height: auto;
+}
+
+.service_section .service_grid_list .info_top .title {
+	font-size: 20px;
+	font-family: "Poppins Bold", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 1.2;
+	max-width: 200px;
+	color: #0A0A0A;
+}
+
+@media (min-width: 992px) {
+	.service_section .service_grid_list .info_top .title {
+		max-width: 220px;
+	}
+}
+
+.service_section .service_grid_list .info_description {
+	font-size: 16px;
+	color: #0A0A0A;
+}
+
+@media (min-width: 992px) {
+	.service_section .service_grid_list .info_description {
+		font-size: 18px;
+	}
+}
+
+.service_section .service_grid_list .info_description+* {
+	margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+	.service_section .service_grid_list .info_description+* {
+		margin-top: 25px;
+	}
+}
+
+.service_section .service_grid_list .btn_more {
+	overflow: hidden;
+	max-width: max-content;
+}
