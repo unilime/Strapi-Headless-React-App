@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_page_aboutuses",
+  "info": {
+    "displayName": "AboutUs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "feedbacks": {
+      "displayName": "feedback",
+      "type": "component",
+      "repeatable": true,
+      "component": "page.feedback"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_page_feedbacks",
+  "info": {
+    "displayName": "Feedback",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

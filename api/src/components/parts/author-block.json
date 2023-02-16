@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_parts_author_blocks",
+  "info": {
+    "displayName": "AuthorBlock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_what_we_dos",
+  "info": {
+    "displayName": "WhatWeDo"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "features": {
+      "displayName": "feature",
+      "type": "component",
+      "repeatable": true,
+      "component": "page.feature"
+    }
+  }
+}
