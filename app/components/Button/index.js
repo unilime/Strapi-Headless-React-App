@@ -1,11 +1,11 @@
 import styles from './Button.module.css'
 
-export default function Button({ props }) {
-	const { label, classes } = props
+export default function Button({ data }) {
+	// const { btn, id, classes } = data
 
-	return (
-		<span className={`${styles.btn} ${classes.map((cl) => `${styles}.${cl}`)}`}>
-			<span>{label}</span>
-		</span>
-	)
+	// return (
+	// 	<span className={ }>
+	// 		<span>{btn.title}</span>
+	// 	</span>
+	// )
 }

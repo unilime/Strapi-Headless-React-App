@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
+import logo from '@/public/logo.svg'
 import styles from './Footer.module.css'
 
 export default function Footer() {
@@ -10,7 +13,7 @@ export default function Footer() {
 						<div className={styles.footer_col}>
 							<div className={styles.footer_menu_content}>
 								<Link className={`${styles.logo} ${styles.logo_img}`} href="/">
-									<img src="/logo.svg" alt="Logo" />
+									<Image src={logo} height={33} width={200} alt="Logo" />
 								</Link>
 								<div className={styles.site_description}>Site description footer</div>
 							</div>

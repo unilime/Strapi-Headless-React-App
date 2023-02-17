@@ -1,0 +1,75 @@
+.btn {
+	padding: 8px 13px;
+	background: #0ad8ce;
+	border: 2px solid #ffffff;
+	position: relative;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	border-radius: 3px;
+	color: #000000;
+}
+
+.btn>span {
+	position: relative;
+	z-index: 2;
+}
+
+@media (min-width: 992px) {
+	.btn {
+		padding: 8px 30px;
+	}
+
+	.btn:hover {
+		text-decoration: none;
+		box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
+		color: #ffffff;
+	}
+
+	.btn:hover:after {
+		left: 0;
+		width: 100%;
+	}
+}
+
+.btn:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: auto;
+	right: 0;
+	width: 0;
+	top: 0;
+	transition: all 0.3s;
+	background: #0ab5d3;
+	z-index: 1;
+}
+
+.btn.btn-box1 {
+	border-color: #000000;
+	color: #000000;
+}
+
+@media (min-width: 992px) {
+	.btn.btn-box1:hover {
+		color: #fff;
+		background: #0ab5d3;
+	}
+}
+
+.btn.btn-box2 {
+	border-color: #000000;
+	color: #000000;
+}
+
+@media (min-width: 992px) {
+	.btn.btn-box2:hover {
+		color: #fff;
+		background: #0ab5d3;
+	}
+}

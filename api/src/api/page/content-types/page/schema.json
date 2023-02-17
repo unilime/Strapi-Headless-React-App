@@ -13,9 +13,7 @@
   "attributes": {
     "Homepage": {
       "type": "dynamiczone",
-      "components": [
-        "parts.hero"
-      ]
+      "components": []
     }
   }
 }

@@ -35,6 +35,10 @@
 	text-align: center;
 }
 
+.section_title+* {
+	margin-top: 10px;
+}
+
 .about_slide_grid_item {
 	display: -webkit-box;
 	display: -ms-flexbox;

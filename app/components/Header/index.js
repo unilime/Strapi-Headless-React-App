@@ -1,7 +1,22 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+import logo from '@/public/logo.svg'
 import styles from './Header.module.css'
 
+import { getPageData } from '@/helpers/helpers'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+
 export default function Header() {
+	// const [menu, setMenu] = useState([])
+
+	// useEffect(() => {
+	// 	getPageData('header?populate=*').then((data) => {
+	// 		setMenu(data?.data?.data)
+	// 	})
+	// })
+
 	return (
 		<>
 			<div className={styles.fake_padding}></div>
@@ -10,7 +25,7 @@ export default function Header() {
 					<div className={styles.header_wrapper}>
 						<div className={styles.logo_wrapper_block}>
 							<Link className={styles.logo_img} href="/">
-								<img src="/logo.svg" alt="Logo" />
+								<Image src={logo} height={25} width={150} alt="Logo" />
 							</Link>
 						</div>
 						<div className={styles.header_inner_content}>

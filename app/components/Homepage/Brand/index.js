@@ -7,10 +7,11 @@ import { Autoplay } from "swiper";
 import 'swiper/css'
 
 export default function Brand({ data }) {
+	const { brands } = data
 	return (
 		<section className={`section ${styles.brand_section}`}>
 			<div className="container">
-				<h2 className={styles.section_title}>Section Title</h2>
+				<h2 className="section_title">Section Title</h2>
 				<Swiper
 					className={styles.swiper_container}
 					speed={6000}
@@ -26,42 +27,19 @@ export default function Brand({ data }) {
 					}}
 					modules={[Autoplay]}
 				>
-					<SwiperSlide className={`${styles.brand_items} ${styles.swiper_slide}`}>
-						<Link className={styles.brand_img} href="#">
-							<img src="/vercel.svg" alt="logo" />
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide className={`${styles.brand_items} ${styles.swiper_slide}`}>
-						<Link className={styles.brand_img} href="#">
-							<img src="/next.svg" alt="logo" />
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide className={`${styles.brand_items} ${styles.swiper_slide}`}>
-						<Link className={styles.brand_img} href="#">
-							<img src="/vercel.svg" alt="logo" />
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide className={`${styles.brand_items} ${styles.swiper_slide}`}>
-						<Link className={styles.brand_img} href="#">
-							<img src="/next.svg" alt="logo" />
-						</Link>
-					</SwiperSlide>
-				</Swiper>
-				{/* <div className={`${styles.swiper_container} ${styles.init_brand_slider_js}`}>
 					<div className={`${styles.brand_grid} ${styles.swiper_wrapper}`}>
-						<div className={`${styles.brand_items} ${styles.swiper_slide}`}>
-							<Link className={styles.brand_img} href="#">
-								<img src="/vercel.svg" alt="logo" />
-							</Link>
-						</div>
-						<div className={`${styles.brand_items} ${styles.swiper_slide}`}>
-							<Link className={styles.brand_img} href="#">
-								<img src="/next.svg" alt="logo" />
-							</Link>
-						</div>
+						{brands?.data?.map((img, i) => {
+							return (
+								<SwiperSlide className={`${styles.brand_items} ${styles.swiper_slide}`} key={i}>
+									<Link className={styles.brand_img} href="#">
+										<img src={`http://localhost:1337${img?.attributes.url}`} alt="logo" />
+									</Link>
+								</SwiperSlide>
+							)
+						})}
 					</div>
-				</div> */}
-			</div>
+				</Swiper>
+			</div >
 		</section >
 	)
 }
